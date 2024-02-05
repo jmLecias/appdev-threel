@@ -24,7 +24,13 @@
 <header>
     <h1>THREEL</h1>
     <div class="header-actions">
-        <h1>Logout</h1>
+        <h1 class="username-actions">Username</h1>
+        <div class="user-dropdown">
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
     </div>
 </header>
 <nav>
@@ -49,17 +55,41 @@
 
     </div>
     <div class="controls-container">
+        <div class="media-progress">
+            <h1 class="time-progress time-text">
+                00:00
+            </h1>
+            <div class="progress-bar">
 
+            </div>
+            <h1 class="time-length time-text">
+                00:00
+            </h1>
+        </div>
+        <div class="controls">
+            <div class="left-controls">
+                <img class="control-button"src="images/icon-fullscreen.png" alt="fullscreen">
+            </div>
+            <div class="main-controls">
+                <img class="control-button" style="transform: rotate(180deg);"  src="images/icon-next.png" alt="next">
+                <img class="control-button" src="images/icon-play.png" alt="play">
+                <img class="control-button" src="images/icon-next.png" alt="next">
+            </div>
+            <div class="right-controls">
+                <img class="control-button" src="images/icon-heart.png" alt="heart">
+                <img class="control-button" style="margin-left: 20px" src="images/icon-donate.png" alt="donate">
+            </div>
+        </div>
     </div>
 </main>
 
 <aside>
     <div>
         <h1 style="font-size: 30px;">TITLE</h1>
-        <h3 style="font-size: 15px;">Owner</h3>
+        <h3 style="font-size: 18px; font-weight: normal;">Owner</h3>
     </div>
     <div class="desc-container">
-        <h2 style="font-size: 25px;">DESCRIPTION</h2>
+        <h2 style="font-size: 20px;">DESCRIPTION</h2>
         <p style="font-weight: normal; font-size: 15px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -68,6 +98,9 @@
             sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 </aside>
-
 </body>
+
+<script>
+
+</script>
 </html>
