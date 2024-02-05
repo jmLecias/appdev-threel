@@ -6,13 +6,14 @@ body,html{
 body{
     background-image: url('img/bgimg.png');
     background-size: cover;
+    background-attachment: fixed;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 55px 1fr minmax(30%, auto);
     grid-template-areas:
     "main"
     "aside";
-    height: 50vh;
+    height: 10vh;
     width: 100vw;
 }
 
@@ -21,7 +22,7 @@ body h1 {
     padding-top: 45px;
     font-family: 'Poppins';
     font-weight: 1000;
-    font-size: 55px;
+    font-size: 50px;
 }
 
 body h2{
@@ -42,7 +43,7 @@ main {
     border-radius: 5px;
     width: 380px;
     height: 425px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .registerContainer form {
@@ -74,6 +75,7 @@ main {
     margin-right: 15px;
     padding-left: 10px;
     border: none;
+    cursor: pointer;
 }
 
 .registerContainer option{
@@ -94,7 +96,7 @@ main {
     font-weight: 600;
     font-style: italic;
     margin-top: 5px;
-
+    cursor: pointer;
 }
 
 .registerContainer button{
@@ -130,22 +132,13 @@ main {
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 1220px) {
-     h1 {
+    h1 {
         font-size: 24px;
     }
 
     h2{
         font-size: 20px;
     }
-
-    /* .registerContainer {
-        width: 60%;
-    }
-
-    .registerContainer button{
-        flex-direction: row;
-        flex-wrap: nowrap;
-    } */ 
 
     body {
         display: grid;
